@@ -1,0 +1,24 @@
+#!/bin/bash
+
+
+num1=0
+num2=0
+
+read num1 num2
+
+
+
+for j in $(seq 1 $num1)
+do
+	for i in $(seq 1 $num2)
+	do
+		multi=`expr $j \* $i`
+		echo -n "$j*$i=$multi  "
+	done
+	echo ""
+done
+
+echo ""   
+
+
+exit 0
